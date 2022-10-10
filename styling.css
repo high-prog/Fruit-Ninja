@@ -1,0 +1,199 @@
+html {
+  height: 100%;
+  background: radial-gradient(circle, #fff, #ccc);
+  background: -webkit-radial-gradient(circle, #fff, #ccc);
+  background: -o-radial-gradient(circle, #fff, #ccc);
+  background: -moz-radial-gradient(circle, #fff, #ccc);
+}
+
+#container {
+  height: 600px;
+  width: 750px;
+  background-color: #9dd2ea;
+  border-radius: 9px;
+  margin: 10px auto;
+  padding: 20px;
+  box-shadow: 14px 14px 12px -1px rgb(8, 57, 71);
+  -webkit-box-shadow: 14px 14px 12px -1px rgb(8, 57, 71);
+  -moz-box-shadow: 14px 14px 12px -1px rgb(8, 57, 71);
+  position: relative;
+}
+
+#score {
+  background-color: #f1ff92;
+  color: #888e5f;
+  padding: 11px;
+  width: fit-content;
+  position: absolute;
+  left: 690px;
+  box-shadow: 2px 4px 5px 0px #9da853;
+  -webkit-box-shadow: 2px 4px 5px 0px #9da853;
+  -moz-box-shadow: 2px 4px 5px 0px #9da853;
+}
+
+#correct {
+  position: absolute;
+  left: 250px;
+  background-color: #42e252;
+  color: white;
+  padding: 11px;
+  border-radius: 20px;
+  display: none;
+}
+
+#wrong {
+  position: absolute;
+  left: 240px;
+  background-color: #de401a;
+  color: white;
+  padding: 11px;
+  border-radius: 20px;
+  display: none;
+}
+#fruitContainer {
+  width: 650px;
+  height: 400px;
+  background-color: white;
+  margin: 60px auto 15px auto;
+  box-shadow: 4px 4px 2px 0px #5e61a7;
+  -moz-box-shadow: 4px 4px 2px 0px #5e61a7;
+  -webkit-box-shadow: 4px 4px 2px 0px #5e61a7;
+  font-size: 100px;
+  text-align: center;
+  padding: 5px;
+  font-family: cursive, sans-serif;
+  border-radius: 12px;
+  color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+#instruction {
+  width: 450px;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+  margin: 1px auto;
+  background-color: #b481d9;
+  font-size: 25px;
+  font-family: cursive;
+  box-shadow: 0px 4px 2px 0px #5c3677;
+  -webkit-box-shadow: 0px 4px 2px 0px #5c3677;
+  -moz-box-shadow: 0px 4px 2px 0px #5c3677;
+}
+
+#choices {
+  height: 100px;
+  margin: 10px auto;
+  width: 450px;
+}
+
+.box {
+  width: 85px;
+  height: 85px;
+  background-color: white;
+  float: left;
+  margin-right: 36.5px;
+  box-shadow: 0px 3px 0.2px 0px grey;
+  -moz-box-shadow: 0px 3px 0.2px 0px grey;
+  -webkit-box-shadow: 0px 3px 0.2px 0px grey;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 77px;
+  font-size: 40px;
+  font-family: cursive, sans-serif;
+  position: relative;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+}
+.box:hover,
+#startreset:hover {
+  color: white;
+  background-color: #9c89f6;
+  box-shadow: 0px 3px 0.2px 0px #382886;
+  -moz-box-shadow: 0px 3px 0.2px 0px #382886;
+  -webkit-box-shadow: 0px 3px 0.2px 0px #382886;
+}
+#startreset:hover {
+  box-shadow: 3px 3px 0.2px 0px #382886;
+  -moz-box-shadow: 3px 3px 0.2px 0px #382886;
+  -webkit-box-shadow: 3px 3px 0.2px 0px #382886;
+}
+.box:active,
+#startreset:active {
+  box-shadow: 0px 0px 0.2px 0px #382886;
+  -moz-box-shadow: 0px 0px 0.2px 0px #382886;
+  -webkit-box-shadow: 0px 0px 0.2px 0px #382886;
+  top: 4px;
+}
+
+#box4 {
+  margin-right: 0;
+}
+
+#startreset {
+  width: 85px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 5px auto;
+  padding: 10px;
+  box-shadow: 3px 3px 02px 0px grey;
+  -moz-box-shadow: 3px 3px 0.2px 0px grey;
+  -webkit-box-shadow: 3px 3px 0.2px 0px grey;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  font-family: cursive, sans-serif;
+  position: relative;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+}
+#trials {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  bottom: 600px;
+  background-color: #f1ff92;
+  padding: 10px;
+  border-radius: 5px;
+  color: cornflowerblue;
+  box-shadow: 3px 3px 02px 0px lightgray;
+  -moz-box-shadow: 3px 3px 0.2px 0px lightgray;
+  -webkit-box-shadow: 3px 3px 0.2px 0px lightgray;
+  /* visibility: hidden; */
+  display: none;
+}
+
+#gameover {
+  height: 250px;
+  width: 500px;
+  position: absolute;
+  background: linear-gradient(#f3ca6b, #f3706c);
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  top: 170px;
+  left: 150px;
+  border-radius: 02px;
+  z-index: 2;
+  display: none;
+  text-transform: uppercase;
+}
+
+.life {
+  width: 16px;
+  height: 16px;
+  margin: 0px 5px;
+}
+
+.fruit {
+  display: none;
+  position: absolute;
+}
